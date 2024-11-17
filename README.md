@@ -51,3 +51,31 @@ Hyperparameters were optimized using `GridSearchCV` with 5-fold cross-validation
     "min_samples_leaf": 2,
     "max_features": "sqrt"
 }
+```
+# Model Performance and Insights
+
+## 3. Model Performance
+
+### 3.1. Classification Metrics
+The Random Forest model achieved high accuracy with balanced performance across all classes. Key metrics evaluated on the testing set include:
+- **Precision**: Proportion of true positives among predicted positives.
+- **Recall**: Proportion of true positives among actual positives.
+- **F1-Score**: Harmonic mean of precision and recall.
+
+#### Classification Report:
+```plaintext
+                      precision    recall  f1-score   support
+
+  acc_walking_2_shin       1.00      1.00      1.00       233
+   acc_walking_chest       1.00      1.00      1.00       725
+ acc_walking_forearm       1.00      1.00      1.00       723
+    acc_walking_head       1.00      1.00      1.00       725
+    acc_walking_shin       1.00      1.00      1.00       729
+   acc_walking_thigh       1.00      1.00      1.00       722
+acc_walking_upperarm       1.00      1.00      1.00       724
+   acc_walking_waist       1.00      1.00      1.00       726
+
+            accuracy                           1.00      5307
+           macro avg       1.00      1.00      1.00      5307
+        weighted avg       1.00      1.00      1.00      5307
+```
